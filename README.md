@@ -1,4 +1,4 @@
-# GPT-2 Inference Project
+# GPT-2 Inference
 
 This project provides a comprehensive inference script for the [GPT-2 model](https://huggingface.co/gpt2) from Hugging Face. GPT-2 is a robust and reliable language model designed for high-quality text generation tasks.
 
