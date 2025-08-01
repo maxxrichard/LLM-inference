@@ -1,0 +1,18 @@
+# Tiny-LLM Inference Requirements
+# Core dependencies for running inference with Tiny-LLM
+
+torch>=2.0.0
+transformers>=4.30.0
+tokenizers>=0.13.0
+accelerate>=0.20.0
+safetensors>=0.3.0
+
+# Optional dependencies for enhanced functionality
+numpy>=1.21.0
+sentencepiece>=0.1.99  # For some tokenizers
+protobuf>=3.20.0       # For some model formats
+
+# Development dependencies (optional)
+# jupyter>=1.0.0
+# matplotlib>=3.5.0
+# seaborn>=0.11.0
