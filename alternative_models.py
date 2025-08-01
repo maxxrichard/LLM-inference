@@ -47,7 +47,7 @@ def modify_inference_script_for_model(model_name: str):
     Instructions to modify the main script for a different model.
     """
     print(f"\nTo use {model_name}:")
-    print("1. Replace 'arnir0/Tiny-LLM' with the new model name in tiny_llm_inference.py")
+    print("1. Replace 'arnir0/Tiny-LLM' with the new model name in gpt2_inference.py")
     print("2. The model will be downloaded automatically on first run")
     print("3. Quality should be significantly better")
     
@@ -56,7 +56,7 @@ def modify_inference_script_for_model(model_name: str):
         print("   Example: 'Hello, how are you?'")
     
     print(f"\nExample usage:")
-    print(f'python tiny_llm_inference.py --prompt "Hello" --max-new-tokens 50')
+    print(f'python gpt2_inference.py --prompt "Hello" --max-new-tokens 50')
 
 if __name__ == "__main__":
     print("Recommended Alternative Models for Better Quality:")
@@ -70,5 +70,5 @@ if __name__ == "__main__":
         print("-" * 40)
     
     print("\nTo switch to a better model:")
-    print("Edit tiny_llm_inference.py and change the model_name default value")
+    print("Edit gpt2_inference.py and change the model_name default value")
     print("Example: model_name: str = 'microsoft/DialoGPT-small'")

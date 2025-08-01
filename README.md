@@ -31,22 +31,22 @@ This project provides a comprehensive inference script for the [GPT-2 model](htt
 
 #### Basic usage with a prompt:
 ```bash
-python tiny_llm_inference.py --prompt "The future of artificial intelligence is"
+python gpt2_inference.py --prompt "The future of artificial intelligence is"
 ```
 
 #### With custom parameters:
 ```bash
-python tiny_llm_inference.py --prompt "Once upon a time" --max-new-tokens 150 --temperature 0.8 --num-sequences 2
+python gpt2_inference.py --prompt "Once upon a time" --max-new-tokens 150 --temperature 0.8 --num-sequences 2
 ```
 
 #### Interactive mode:
 ```bash
-python tiny_llm_inference.py --interactive
+python gpt2_inference.py --interactive
 ```
 
 #### Force specific device:
 ```bash
-python tiny_llm_inference.py --device cpu --prompt "Hello world"
+python gpt2_inference.py --device cpu --prompt "Hello world"
 ```
 
 ### Interactive Mode
@@ -54,7 +54,7 @@ python tiny_llm_inference.py --device cpu --prompt "Hello world"
 Run the script in interactive mode for continuous text generation:
 
 ```bash
-python tiny_llm_inference.py --interactive
+python gpt2_inference.py --interactive
 ```
 
 In interactive mode, you can:
@@ -77,17 +77,17 @@ In interactive mode, you can:
 
 ### Example 1: Story Generation
 ```bash
-python tiny_llm_inference.py --prompt "In a distant galaxy" --max-new-tokens 200 --temperature 0.8
+python gpt2_inference.py --prompt "In a distant galaxy" --max-new-tokens 200 --temperature 0.8
 ```
 
 ### Example 2: Multiple Variations
 ```bash
-python tiny_llm_inference.py --prompt "The key to success is" --num-sequences 3 --temperature 0.9
+python gpt2_inference.py --prompt "The key to success is" --num-sequences 3 --temperature 0.9
 ```
 
 ### Example 3: Conservative Generation
 ```bash
-python tiny_llm_inference.py --prompt "Python programming" --temperature 0.3 --top-p 0.8
+python gpt2_inference.py --prompt "Python programming" --temperature 0.3 --top-p 0.8
 ```
 
 ## Model Information
