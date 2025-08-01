@@ -1,6 +1,6 @@
-# Tiny-LLM Inference Project
+# GPT-2 Inference Project
 
-This project provides a comprehensive inference script for the [Tiny-LLM model](https://huggingface.co/arnir0/Tiny-LLM) from Hugging Face. The Tiny-LLM is a compact language model designed for efficient text generation tasks.
+This project provides a comprehensive inference script for the [GPT-2 model](https://huggingface.co/gpt2) from Hugging Face. GPT-2 is a robust and reliable language model designed for high-quality text generation tasks.
 
 ## Features
 
@@ -36,7 +36,7 @@ python tiny_llm_inference.py --prompt "The future of artificial intelligence is"
 
 #### With custom parameters:
 ```bash
-python tiny_llm_inference.py --prompt "Once upon a time" --max-length 150 --temperature 0.8 --num-sequences 2
+python tiny_llm_inference.py --prompt "Once upon a time" --max-new-tokens 150 --temperature 0.8 --num-sequences 2
 ```
 
 #### Interactive mode:
@@ -66,7 +66,7 @@ In interactive mode, you can:
 ### Command Line Arguments
 
 - `--prompt`: Text prompt for generation
-- `--max-length`: Maximum length of generated text (default: 100)
+- `--max-new-tokens`: Maximum number of new tokens to generate (default: 80)
 - `--temperature`: Sampling temperature 0.0-1.0 (default: 0.7)
 - `--top-p`: Top-p sampling parameter 0.0-1.0 (default: 0.9)
 - `--num-sequences`: Number of sequences to generate (default: 1)
@@ -77,7 +77,7 @@ In interactive mode, you can:
 
 ### Example 1: Story Generation
 ```bash
-python tiny_llm_inference.py --prompt "In a distant galaxy" --max-length 200 --temperature 0.8
+python tiny_llm_inference.py --prompt "In a distant galaxy" --max-new-tokens 200 --temperature 0.8
 ```
 
 ### Example 2: Multiple Variations
@@ -92,10 +92,20 @@ python tiny_llm_inference.py --prompt "Python programming" --temperature 0.3 --t
 
 ## Model Information
 
-- **Model**: [arnir0/Tiny-LLM](https://huggingface.co/arnir0/Tiny-LLM)
+- **Model**: [GPT-2](https://huggingface.co/gpt2)
 - **Type**: Causal Language Model
-- **Use Cases**: Text generation, completion, creative writing
-- **Size**: Compact model suitable for local inference
+- **Use Cases**: Text generation, completion, creative writing, conversation
+- **Size**: ~500MB (compact yet powerful)
+- **Quality**: High-quality, coherent text generation
+
+## Why GPT-2?
+
+GPT-2 provides significantly better text generation quality compared to smaller models:
+- **Coherent responses** - Generates meaningful, contextually appropriate text
+- **Better grammar** - Follows proper sentence structure and language rules  
+- **Creative capabilities** - Excellent for storytelling and creative writing
+- **Reliable performance** - Consistent, predictable output quality
+- **Well-trained** - Extensively trained on diverse, high-quality text data
 
 ## System Requirements
 
@@ -114,20 +124,21 @@ python tiny_llm_inference.py --prompt "Python programming" --temperature 0.3 --t
 
 ### Common Issues
 
-1. **Out of Memory**: Reduce `max_length` or use CPU instead of GPU
+1. **Out of Memory**: Reduce `max-new-tokens` or use CPU instead of GPU
 2. **Slow Generation**: Consider using GPU if available
-3. **Model Download Issues**: Ensure stable internet connection
+3. **Model Download Issues**: Ensure stable internet connection (GPT-2 is ~500MB)
 
 ### Performance Tips
 
 - Use GPU when available for faster inference
 - Lower temperature (0.1-0.5) for more deterministic output
 - Higher temperature (0.7-1.0) for more creative output
-- Adjust `max_length` based on your needs and system capacity
+- Adjust `max-new-tokens` based on your needs and system capacity
+- GPT-2 works well with most prompt types - try storytelling, questions, or completions
 
 ## License
 
-This project is provided as-is for educational and research purposes. Please check the [Tiny-LLM model license](https://huggingface.co/arnir0/Tiny-LLM) for model usage terms.
+This project is provided as-is for educational and research purposes. Please check the [GPT-2 model license](https://huggingface.co/gpt2) for model usage terms.
 
 ## Contributing
 
